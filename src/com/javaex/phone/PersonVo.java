@@ -68,23 +68,3 @@ public class PersonVo {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//System.out.print(">입력 : ");
-//search = sc.nextLine();
-//sc.nextLine();
-//
-//
-//
-//PersonVo searchVo = new PersonVo(search);
-//phoneDao.personSearch(searchVo);

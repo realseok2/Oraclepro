@@ -15,9 +15,8 @@ public class PhoneApp {
 		String insertName;
 		String insertHp;
 		String insertCompany;
-		String search =null;
+		String search = null;
 		int selectNo = 0;
-		
 
 //-----------------------------------------------------------------------------------------
 
@@ -112,7 +111,7 @@ public class PhoneApp {
 				System.out.print(">입력 : ");
 				search = sc.nextLine();
 				phoneDao.personSearch(search);
-				
+
 				List<PersonVo> searchList = phoneDao.getPersonList();
 				System.out.println("=================================");
 				for (PersonVo vo : searchList) {
@@ -120,13 +119,7 @@ public class PhoneApp {
 							vo.getPersonId() + ",   " + vo.getName() + ",   " + vo.getHp() + ",   " + vo.getCompany());
 				}
 				System.out.println("=================================");
-				
-				
-				
-				
-				
-				
-				
+
 				break;
 
 			case 6:
