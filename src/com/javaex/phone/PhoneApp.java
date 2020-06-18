@@ -110,9 +110,12 @@ public class PhoneApp {
 
 				System.out.print(">입력 : ");
 				search = sc.nextLine();
-				phoneDao.personSearch(search);
-
-				List<PersonVo> searchList = phoneDao.getPersonList();
+				
+				
+//				phoneDao.personSearch(search);
+//				List<PersonVo> searchList = phoneDao.getPersonList();		--> 여기서 전체리스트를 출력하는 오류를 범하고 있었음
+				
+				List<PersonVo> searchList = phoneDao.personSearch(search);
 				System.out.println("=================================");
 				for (PersonVo vo : searchList) {
 					System.out.println(
