@@ -129,8 +129,7 @@ public class PhoneApp {
 				// 종료
 				System.out.println("< 6. 종료 >");
 				System.out.println("************************************************");
-				System.out.println(
-						"*                                          감사합니다.                                          *");
+				System.out.println("*                                          감사합니다.                                          *");
 				System.out.println("************************************************");
 				run = false;
 				break;
