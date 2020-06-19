@@ -47,8 +47,10 @@ public class PhoneApp {
 				List<PersonVo> personList = phoneDao.getPersonList();
 				System.out.println("=================================");
 				for (PersonVo vo : personList) {
-					System.out.println(
-							vo.getPersonId() + ",   " + vo.getName() + ",   " + vo.getHp() + ",   " + vo.getCompany());
+					System.out.print(vo.getPersonId() + ".\t   ");
+					System.out.print(vo.getName() + ",\t");
+					System.out.print(vo.getHp() + ",\t   ");
+					System.out.println(vo.getCompany());
 				}
 				System.out.println("=================================");
 				break;
@@ -56,7 +58,7 @@ public class PhoneApp {
 			case 2:
 				// 등록
 				System.out.println("< 2. 등록 >");
-				System.out.println("기존의 번호 목록에 새로운 번호를 추가합니다.");
+				System.out.println("기존의 번호 목록에 새로운 번호 정보를 추가합니다.");
 
 				sc.nextLine();
 				System.out.print(">이름 :");
@@ -73,8 +75,8 @@ public class PhoneApp {
 			case 3:
 				// 수정
 				System.out.println("< 3. 수정 >");
-				System.out.println("기존의 번호 목록을 선택된 번호를 수정합니다.");
-				System.out.println("수정할 번호를 입력해 주세요.");
+				System.out.println("기존의 번호 목록에서 선택된 번호의 정보를 수정합니다.");
+				System.out.println("수정할 목록의 번호를 입력해 주세요.");
 
 				System.out.print(">번호 : ");
 				selectNo = sc.nextInt();
@@ -94,7 +96,7 @@ public class PhoneApp {
 			case 4:
 				// 삭제
 				System.out.println("< 4. 삭제 >");
-				System.out.println("기존의 번호 목록에서 선택된 번호를 삭제합니다.");
+				System.out.println("기존의 번호 목록에서 선택된 번호의 정보를 삭제합니다.");
 
 				System.out.print(">번호 : ");
 				selectNo = sc.nextInt();
@@ -118,8 +120,10 @@ public class PhoneApp {
 				List<PersonVo> searchList = phoneDao.personSearch(search);
 				System.out.println("=================================");
 				for (PersonVo vo : searchList) {
-					System.out.println(
-							vo.getPersonId() + ",   " + vo.getName() + ",   " + vo.getHp() + ",   " + vo.getCompany());
+					System.out.print(vo.getPersonId() + ".\t   ");
+					System.out.print(vo.getName() + ",\t");
+					System.out.print(vo.getHp() + ",\t   ");
+					System.out.println(vo.getCompany());
 				}
 				System.out.println("=================================");
 
